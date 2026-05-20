@@ -10,29 +10,19 @@ using System.Windows.Forms;
 
 namespace Thiết_kế_màn_hình_đăng_nhập
 {
-    public partial class Form3 : Form
+    public partial class UserControl1 : UserControl
     {
-        public Form3()
+        public UserControl1()
         {
             InitializeComponent();
         }
 
-        private void Form3_Load(object sender, EventArgs e)
+        private void UserControl1_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
 
         }

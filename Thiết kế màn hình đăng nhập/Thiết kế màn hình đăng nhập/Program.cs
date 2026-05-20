@@ -16,7 +16,7 @@ namespace Thiết_kế_màn_hình_đăng_nhập
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Form2());
         }
     }
 }

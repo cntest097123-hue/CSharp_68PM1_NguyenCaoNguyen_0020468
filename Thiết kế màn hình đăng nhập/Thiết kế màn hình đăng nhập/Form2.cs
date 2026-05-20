@@ -69,12 +69,33 @@ namespace Thiết_kế_màn_hình_đăng_nhập
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            UserControl1 control1   = new UserControl1();
+            panel1.Controls.Clear();
+            panel1.Controls.Add(control1);
         }
 
         private void label7_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void quảnLýSinhViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserControl1 control1 = new UserControl1();
+            panel1.Controls.Clear();
+            panel1.Controls.Add(control1);
+        }
+
+        private void quảnLýLớpHọcToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserControl2 control2 = new UserControl2();
+            panel1.Controls.Clear();
+            panel1.Controls.Add(control2);
         }
     }
 }

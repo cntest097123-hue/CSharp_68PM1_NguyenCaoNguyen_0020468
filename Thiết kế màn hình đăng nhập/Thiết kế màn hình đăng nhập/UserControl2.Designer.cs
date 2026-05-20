@@ -1,13 +1,13 @@
 ﻿namespace Thiết_kế_màn_hình_đăng_nhập
 {
-    partial class Form3
+    partial class UserControl2
     {
-        /// <summary>
+        /// <summary> 
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
+        /// <summary> 
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -20,10 +20,10 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Component Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
@@ -34,80 +34,77 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button5 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.quảnLýLớpHọcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.quảnLýSinhViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button2 = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button10 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(658, 644);
+            this.label6.Location = new System.Drawing.Point(620, 571);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(154, 20);
-            this.label6.TabIndex = 35;
+            this.label6.TabIndex = 51;
             this.label6.Text = "Trang 1/1 | 2 bản ghi";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // button8
             // 
             this.button8.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button8.Location = new System.Drawing.Point(921, 616);
+            this.button8.Location = new System.Drawing.Point(904, 559);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(102, 77);
-            this.button8.TabIndex = 33;
+            this.button8.Size = new System.Drawing.Size(63, 53);
+            this.button8.TabIndex = 49;
             this.button8.Text = ">";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(435, 616);
+            this.button7.Location = new System.Drawing.Point(430, 559);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(104, 77);
-            this.button7.TabIndex = 32;
+            this.button7.Size = new System.Drawing.Size(65, 53);
+            this.button7.TabIndex = 48;
             this.button7.Text = "<";
             this.button7.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(335, 616);
+            this.button6.Location = new System.Drawing.Point(369, 559);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(94, 77);
-            this.button6.TabIndex = 31;
+            this.button6.Size = new System.Drawing.Size(55, 53);
+            this.button6.TabIndex = 47;
             this.button6.Text = "<<";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(1029, 616);
+            this.button9.Location = new System.Drawing.Point(973, 559);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(97, 77);
-            this.button9.TabIndex = 34;
+            this.button9.Size = new System.Drawing.Size(58, 53);
+            this.button9.TabIndex = 50;
             this.button9.Text = ">>";
             this.button9.UseVisualStyleBackColor = true;
             // 
@@ -119,68 +116,127 @@
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dataGridView1.Location = new System.Drawing.Point(335, 122);
+            this.dataGridView1.Location = new System.Drawing.Point(366, 255);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(791, 470);
-            this.dataGridView1.TabIndex = 30;
+            this.dataGridView1.Size = new System.Drawing.Size(665, 298);
+            this.dataGridView1.TabIndex = 46;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Mã ID";
+            this.Column1.MinimumWidth = 8;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 150;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Mã Lớp";
+            this.Column2.MinimumWidth = 8;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 150;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Tên lớp";
+            this.Column3.MinimumWidth = 8;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 150;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Ghi chú";
+            this.Column4.MinimumWidth = 8;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 150;
             // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.button5.Location = new System.Drawing.Point(768, 66);
+            this.button5.Location = new System.Drawing.Point(799, 210);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(103, 44);
-            this.button5.TabIndex = 29;
+            this.button5.Size = new System.Drawing.Size(103, 31);
+            this.button5.TabIndex = 45;
             this.button5.Text = "Tìm";
             this.button5.UseVisualStyleBackColor = false;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(335, 75);
+            this.textBox3.Location = new System.Drawing.Point(366, 209);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(412, 26);
-            this.textBox3.TabIndex = 28;
+            this.textBox3.TabIndex = 44;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(331, 35);
+            this.label5.Location = new System.Drawing.Point(365, 166);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(255, 20);
-            this.label5.TabIndex = 27;
+            this.label5.TabIndex = 43;
             this.label5.Text = "Tìm kiếm (Mã ID / Mã lớp / Tên lớp):";
             // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button4.Location = new System.Drawing.Point(145, 434);
+            this.button4.Location = new System.Drawing.Point(181, 516);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(129, 80);
-            this.button4.TabIndex = 26;
+            this.button4.Size = new System.Drawing.Size(129, 45);
+            this.button4.TabIndex = 42;
             this.button4.Text = "Làm mới";
             this.button4.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Red;
-            this.button3.Location = new System.Drawing.Point(18, 434);
+            this.button3.Location = new System.Drawing.Point(54, 516);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(121, 80);
-            this.button3.TabIndex = 25;
+            this.button3.Size = new System.Drawing.Size(121, 45);
+            this.button3.TabIndex = 41;
             this.button3.Text = "Xóa";
             this.button3.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button1.Location = new System.Drawing.Point(18, 336);
+            this.button1.Location = new System.Drawing.Point(54, 468);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 80);
-            this.button1.TabIndex = 23;
+            this.button1.Size = new System.Drawing.Size(121, 42);
+            this.button1.TabIndex = 39;
             this.button1.Text = "Thêm";
             this.button1.UseVisualStyleBackColor = false;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Location = new System.Drawing.Point(54, 166);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(262, 296);
+            this.groupBox1.TabIndex = 38;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Thông tin lớp học";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(6, 246);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(235, 26);
+            this.textBox5.TabIndex = 7;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(6, 178);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(235, 26);
+            this.textBox4.TabIndex = 6;
             // 
             // textBox2
             // 
@@ -197,7 +253,6 @@
             this.label4.Size = new System.Drawing.Size(68, 20);
             this.label4.TabIndex = 4;
             this.label4.Text = "Ghi chú:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -234,126 +289,30 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã ID:";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 35);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(262, 295);
-            this.groupBox1.TabIndex = 22;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông tin sinh viên";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // đăngXuấtToolStripMenuItem
-            // 
-            this.đăngXuấtToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
-            this.đăngXuấtToolStripMenuItem.ForeColor = System.Drawing.Color.Red;
-            this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(109, 29);
-            this.đăngXuấtToolStripMenuItem.Text = "Đăng xuất";
-            // 
-            // quảnLýLớpHọcToolStripMenuItem
-            // 
-            this.quảnLýLớpHọcToolStripMenuItem.Name = "quảnLýLớpHọcToolStripMenuItem";
-            this.quảnLýLớpHọcToolStripMenuItem.Size = new System.Drawing.Size(154, 29);
-            this.quảnLýLớpHọcToolStripMenuItem.Text = "Quản lý lớp học";
-            // 
-            // quảnLýSinhViênToolStripMenuItem
-            // 
-            this.quảnLýSinhViênToolStripMenuItem.Name = "quảnLýSinhViênToolStripMenuItem";
-            this.quảnLýSinhViênToolStripMenuItem.Size = new System.Drawing.Size(163, 29);
-            this.quảnLýSinhViênToolStripMenuItem.Text = "Quản lý sinh viên";
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.LimeGreen;
-            this.button2.Location = new System.Drawing.Point(145, 336);
+            this.button2.Location = new System.Drawing.Point(181, 468);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(129, 80);
-            this.button2.TabIndex = 24;
+            this.button2.Size = new System.Drawing.Size(129, 42);
+            this.button2.TabIndex = 40;
             this.button2.Text = "Sửa";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.quảnLýSinhViênToolStripMenuItem,
-            this.quảnLýLớpHọcToolStripMenuItem,
-            this.đăngXuấtToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1181, 36);
-            this.menuStrip1.TabIndex = 21;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(6, 178);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(235, 26);
-            this.textBox4.TabIndex = 6;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(6, 246);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(235, 26);
-            this.textBox5.TabIndex = 7;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Mã ID";
-            this.Column1.MinimumWidth = 8;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 150;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Mã Lớp";
-            this.Column2.MinimumWidth = 8;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 150;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Tên lớp";
-            this.Column3.MinimumWidth = 8;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 150;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Ghi chú";
-            this.Column4.MinimumWidth = 8;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 150;
-            // 
             // button10
             // 
-            this.button10.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button10.Location = new System.Drawing.Point(17, 530);
+            this.button10.BackColor = System.Drawing.Color.DarkCyan;
+            this.button10.Location = new System.Drawing.Point(57, 567);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(256, 61);
-            this.button10.TabIndex = 36;
+            this.button10.Size = new System.Drawing.Size(253, 45);
+            this.button10.TabIndex = 52;
             this.button10.Text = "Xem danh sách sinh viên";
             this.button10.UseVisualStyleBackColor = false;
             // 
-            // Form3
+            // UserControl2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1181, 808);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button8);
@@ -369,15 +328,11 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.menuStrip1);
-            this.Name = "Form3";
-            this.Text = "Form3";
-            this.Load += new System.EventHandler(this.Form3_Load);
+            this.Name = "UserControl2";
+            this.Size = new System.Drawing.Size(1203, 864);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -391,30 +346,26 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem quảnLýLớpHọcToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem quảnLýSinhViênToolStripMenuItem;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.Button button10;
     }
 }
