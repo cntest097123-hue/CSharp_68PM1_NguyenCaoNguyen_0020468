@@ -12,6 +12,7 @@ namespace Thiết_kế_màn_hình_đăng_nhập
 {
     public partial class UserControl2 : UserControl
     {
+        DataClasses1DataContext db = new DataClasses1DataContext();
         public UserControl2()
         {
             InitializeComponent();
@@ -25,6 +26,12 @@ namespace Thiết_kế_màn_hình_đăng_nhập
         private void button8_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void UserControl2_Load(object sender, EventArgs e)
+        {
+            List<LopHoc> dssv = db.LopHocs.ToList();
+            dataGridView1.DataSource = dssv;
         }
     }
 }

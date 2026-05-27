@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="qlsvc#" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=CN097;Initial Catalog=qlsvc#;Integrated Security=True;Trust Server Certificate=True" SettingsObjectName="Thiết_kế_màn_hình_đăng_nhập.Properties.Settings" SettingsPropertyName="qlsvc_ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.LopHoc" Member="LopHocs">
+    <Type Name="LopHoc">
+      <Column Name="id" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ma_lop" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="ten_lop" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ghi_chu" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="LopHoc_SinhVien" Member="SinhViens" ThisKey="ma_lop" OtherKey="ma_lop" Type="SinhVien" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SinhVien" Member="SinhViens">
+    <Type Name="SinhVien">
+      <Column Name="ma_sv" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ho_ten" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ngay_sinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="gioi_tinh" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="ma_lop" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Association Name="LopHoc_SinhVien" Member="LopHoc" ThisKey="ma_lop" OtherKey="ma_lop" Type="LopHoc" IsForeignKey="true" DeleteRule="SET NULL" />
+    </Type>
+  </Table>
+</Database>
