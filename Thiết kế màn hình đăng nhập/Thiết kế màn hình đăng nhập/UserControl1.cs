@@ -167,5 +167,41 @@ namespace Thiết_kế_màn_hình_đăng_nhập
                 LoadData();
             }
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            if (currentPage > 1)
+            {
+                currentPage--;
+                LoadData();
+            }
+        }
+        private int TotalPages()
+        {
+            return (int)Math.Ceiling(
+                (double)db.SinhViens.Count() / pageSize);
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            currentPage = TotalPages();
+            LoadData();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            currentPage = 1;
+            LoadData();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
