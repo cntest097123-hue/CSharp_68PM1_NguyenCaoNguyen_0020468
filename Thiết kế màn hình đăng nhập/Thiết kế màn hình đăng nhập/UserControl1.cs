@@ -79,5 +79,34 @@ namespace Thiết_kế_màn_hình_đăng_nhập
                 comboBox2.SelectedValue = row.Cells["ma_lop"].Value.ToString();
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                String ma_sv = textBox1.Text;
+
+                SinhVien sv = db.SinhViens.FirstOrDefault(x => x.ma_sv == ma_sv);
+
+                if (sv != null)
+                {
+                    sv.ho_ten = textBox2.Text;
+                    sv.gioi_tinh =  comboBox1.Text;
+                    sv.ngay_sinh = dateTimePicker1.Value;
+                    sv.ma_lop = comboBox2.SelectedValue.ToString();
+                    db.SubmitChanges();
+                    MessageBox.Show("Cap nhat thanh cong!");
+                    LoadData();
+                }
+                else
+                {
+                    MessageBox.Show("Khong tim thay sinh vien!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
