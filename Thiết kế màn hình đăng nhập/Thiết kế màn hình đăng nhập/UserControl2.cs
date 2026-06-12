@@ -33,5 +33,10 @@ namespace Thiết_kế_màn_hình_đăng_nhập
             List<LopHoc> dssv = db.LopHocs.ToList();
             dataGridView1.DataSource = dssv;
         }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

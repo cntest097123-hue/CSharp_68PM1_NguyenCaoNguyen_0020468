@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Channels;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -61,6 +62,22 @@ namespace Thiết_kế_màn_hình_đăng_nhập
             comboBox2.DataSource = dslh;
             comboBox2.DisplayMember = "ten_lop";
             comboBox2.ValueMember = "ma_lop";
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dataGridView1 .Rows[e.RowIndex];
+
+                textBox1.Text = row.Cells["ma_sv"].Value.ToString();
+                textBox2.Text = row.Cells["ho_ten"].Value.ToString();
+                comboBox1.Text = row.Cells["gioi_tinh"].Value.ToString();
+
+                dateTimePicker1.Value = Convert.ToDateTime(row.Cells["ngay_sinh"].Value);
+
+                comboBox2.SelectedValue = row.Cells["ma_lop"].Value.ToString();
+            }
         }
     }
 }
