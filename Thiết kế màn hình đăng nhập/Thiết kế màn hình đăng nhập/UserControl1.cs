@@ -28,7 +28,26 @@ namespace Thiết_kế_màn_hình_đăng_nhập
 
         private void button3_Click(object sender, EventArgs e)
         {
+            DialogResult result = MessageBox.Show(
+                "Ban co chac chan muon xoa sinh vien nay?",
+                "Xac nhan",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
 
+            if (result == DialogResult.Yes)
+            {
+                String ma_sv = (textBox1.Text);
+                SinhVien sv = db.SinhViens
+                                    .FirstOrDefault(x => x.ma_sv == ma_sv);
+
+                if (sv != null)
+                {
+                    db.SinhViens.DeleteOnSubmit(sv);
+                    db.SubmitChanges();
+                    MessageBox.Show("Xoa thanh cong!");
+                    LoadData();
+                }
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -91,7 +110,7 @@ namespace Thiết_kế_màn_hình_đăng_nhập
                 if (sv != null)
                 {
                     sv.ho_ten = textBox2.Text;
-                    sv.gioi_tinh =  comboBox1.Text;
+                    sv.gioi_tinh = comboBox1.Text;
                     sv.ngay_sinh = dateTimePicker1.Value;
                     sv.ma_lop = comboBox2.SelectedValue.ToString();
                     db.SubmitChanges();
