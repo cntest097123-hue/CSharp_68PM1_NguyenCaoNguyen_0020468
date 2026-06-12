@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Runtime.Remoting.Channels;
 using System.Text;
@@ -14,6 +15,8 @@ namespace Thiết_kế_màn_hình_đăng_nhập
     public partial class UserControl1 : UserControl
     {
         DataClasses1DataContext db = new DataClasses1DataContext();
+        int currentPage = 1;
+        int pageSize = 5;
         public UserControl1()
         {
             InitializeComponent();
@@ -21,8 +24,7 @@ namespace Thiết_kế_màn_hình_đăng_nhập
 
         private void UserControl1_Load(object sender, EventArgs e)
         {
-            List<SinhVien> dslh = db.SinhViens.ToList();
-            dataGridView1.DataSource = dslh;
+            LoadData();
             LoadDSLH();
         }
 
@@ -72,8 +74,18 @@ namespace Thiết_kế_màn_hình_đăng_nhập
         }
         public void LoadData()
         {
-            List<SinhVien> dssv = db.SinhViens.ToList();
+            var dssv = db.SinhViens 
+            .OrderBy(x => x.ma_sv   )
+            .Skip((currentPage - 1) * pageSize)
+            .Take(pageSize)
+            .ToList();
+
             dataGridView1.DataSource = dssv;
+
+            int totalPages = (int)Math.Ceiling(
+            (double)db.SinhViens.Count() / pageSize);
+
+            label6.Text = $"Trang {currentPage}/{totalPages}";
         }
         public void LoadDSLH()
         {
@@ -125,6 +137,34 @@ namespace Thiết_kế_màn_hình_đăng_nhập
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string keyword = textBox3.Text.Trim();
+
+            var ketQua = db.SinhViens   
+                           .Where(sv =>
+                                sv.ho_ten.Contains(keyword)||
+            
+                                sv.ma_sv.ToString().Contains(keyword)||
+            
+                                sv.ma_lop.Contains(keyword))
+                           .ToList();
+
+            dataGridView1.DataSource = ketQua;
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            int totalPages = (int)Math.Ceiling(
+            (double)db.SinhViens.Count() / pageSize);
+
+            if (currentPage < totalPages)
+            {
+                currentPage++;
+                LoadData();
             }
         }
     }
